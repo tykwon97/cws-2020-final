@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./finalproject.css">
+    <script type="text/javascript" src="./finalproject.js"></script>
+    <title>미세 먼지</title>
+</head>
+<body>
+    <h1>미세 먼지</h1>
+    <input type="text" id="year" placeholder="연도">
+    <input type="text" id="itemcode" placeholder="항목명">
+    <button class="button" onclick="accident(year.value,itemcode.value)">BUTTON</button>
+
+    <h1>측정소 리스트</h1>
+    <input type="text" id="name1" placeholder="주소 이름">
+    <input type="text" id="name2" placeholder="측정소 이름">
+    <button class="button" onclick="measuringstation_list1(name1.value,name2.value)">BUTTON</button>
+
+    <h1>측정소 리스트</h1>
+    <input type="text" id="name" placeholder="측정소 이름">
+    <button class="button" onclick="measuringstation_list2(name.value)">BUTTON</button>
+    
+    <h1>일별 코로나 데이타</h1>
+    <input type="text" id="date" placeholder="날짜">
+    <button class="button" onclick="corona(date.value)">BUTTON</button>
+    <h1>총 코로나 데이타</h1>
+    <input type="text" id="date" placeholder="날짜">
+    <button class="button" onclick="corona_total(date.value)">BUTTON</button>
+
+</body>
+</html>
