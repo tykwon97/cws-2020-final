@@ -4,30 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./finalproject.css">
-    <script type="text/javascript" src="./finalproject.js"></script>
+    <script type="text/javascript" src="./finalproject.js"></script> <!-- s3로 구현-->
     <title>미세 먼지</title>
 </head>
 <body>
+    <h3>FINE DUST / CORONA</h3>
+    <p>우리의 목숨을 위협하는 존재들</p>
+    <img id="" src="https://cws-2020-test.s3.ap-northeast-2.amazonaws.com/finedust.jpg" style="width: 400px; height: 200px;"></img>	
+    <hr>
+    <A href = "https://cws-2020-test.s3.ap-northeast-2.amazonaws.com/signup.html" target = "blank" > Sign Up </A>
+    <hr>
+
     <h1>미세 먼지</h1>
     <input type="text" id="year" placeholder="연도">
+    <p>입력 예시 : 2019 / 2020</p>
     <input type="text" id="itemcode" placeholder="항목명">
-    <button class="button" onclick="accident(year.value,itemcode.value)">BUTTON</button>
-
+    <button class="button" onclick="accident(year.value,itemcode_value.value)">검색</button><br>
+    <p>입력 예시 : PM10 / PN25</p>
+    <hr>    
+    
     <h1>측정소 리스트</h1>
     <input type="text" id="name1" placeholder="주소 이름">
+    <p>입력 예시 : 서울 / 인천</p>
     <input type="text" id="name2" placeholder="측정소 이름">
-    <button class="button" onclick="measuringstation_list1(name1.value,name2.value)">BUTTON</button>
-
+    <button class="button" onclick="measuringstation_list1(name1.value,name2.value)">검색</button>
+    <p>입력 예시 : 광진구 / 강남구 / 부평</p>
+    <hr>
     <h1>측정소 리스트</h1>
-    <input type="text" id="name" placeholder="측정소 이름">
-    <button class="button" onclick="measuringstation_list2(name.value)">BUTTON</button>
-    
+    <input type="text" id="name3" placeholder="측정소 이름">
+    <button class="button" onclick="measuringstation_list2(name3.value)">검색</button>
+    <p>입력 예시 : 혜화동  (읍면동명)</p>
+    <hr>
     <h1>일별 코로나 데이타</h1>
-    <input type="text" id="date" placeholder="날짜">
-    <button class="button" onclick="corona(date.value)">BUTTON</button>
+    <input type="text" id="date1" placeholder="날짜">
+    <button class="button" onclick="corona(date1.value)">검색</button>
+    <p>입력 예시 : 20190101 / 20201011 / 20201213 </p>
+    <hr>
     <h1>총 코로나 데이타</h1>
-    <input type="text" id="date" placeholder="날짜">
-    <button class="button" onclick="corona_total(date.value)">BUTTON</button>
+    <input type="text" id="date2" placeholder="날짜">
+    <button class="button" onclick="corona_total(date2.value)">검색</button>
+    <p>입력 예시 : 20190101 / 20201011 / 20201213 </p>
 
+    <!--<button class="button" onclick="test()">연습</button>-->
 </body>
 </html>

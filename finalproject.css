@@ -4,9 +4,9 @@ body{
 }
 .button{
     width:100px;
-    background-color: #f8585b;
+    background-color: #e7daf5;
     border: none;
-    color:#fff;
+    color:rgb(8, 8, 8);
     padding: 15px 0;
     text-align: center;
     text-decoration: none;
@@ -16,3 +16,5 @@ body{
     cursor: pointer;
 
 }
+
+
