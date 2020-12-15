@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./finalproject.css">
-    <script type="text/javascript" src="./finalproject.js"></script> <!-- s3로 구현-->
+    <script type="text/javascript" src="./finalproject.js"></script> <!-- s3로 배포-->
     <title>미세 먼지</title>
 </head>
 <body>
@@ -12,15 +12,15 @@
     <p>우리의 목숨을 위협하는 존재들</p>
     <img id="" src="https://cws-2020-test.s3.ap-northeast-2.amazonaws.com/finedust.jpg" style="width: 400px; height: 200px;"></img>	
     <hr>
-    <A href = "https://cws-2020-test.s3.ap-northeast-2.amazonaws.com/signup.html" target = "blank" > Sign Up </A>
+    <A href = "https://cws-2020-test.s3.ap-northeast-2.amazonaws.com/signup.html" target = "blank" > Sign Up </A><!-- s3로 배포-->
     <hr>
 
     <h1>미세 먼지</h1>
     <input type="text" id="year" placeholder="연도">
     <p>입력 예시 : 2019 / 2020</p>
     <input type="text" id="itemcode" placeholder="항목명">
-    <button class="button" onclick="accident(year.value,itemcode_value.value)">검색</button><br>
-    <p>입력 예시 : PM10 / PN25</p>
+    <button class="button" onclick="accident(year.value,itemcode.value)">검색</button><br>
+    <p>입력 예시 : PM10 / PM25</p>
     <hr>    
     
     <h1>측정소 리스트</h1>
