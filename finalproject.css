@@ -17,4 +17,13 @@ body{
 
 }
 
+.leftbox{
+    font-weight: bold;
+    float: right;
+}
+
+.image{
+    width: 400px;
+    height: 200px;
+}
 
